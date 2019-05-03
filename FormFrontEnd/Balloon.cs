@@ -10,7 +10,7 @@ namespace FormFrontEnd
     public class Balloon
     {
         private string colour;
-        private decimal height;
+        //private decimal height; This is now an autoproperty, no need for the private feild
         private decimal diameter;
 
         public string Colour
@@ -32,17 +32,7 @@ namespace FormFrontEnd
             }
         }
 
-        public decimal Height
-        {
-            get
-            {
-                return height;
-            }
-            set
-            {
-                height = value;
-            }
-        }
+        public decimal Height{ get; set; }
 
         public decimal Diameter
         {
